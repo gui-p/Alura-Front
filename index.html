@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="" href="">
     <link rel="stylesheet" href="style.css">
     <title>Portifólio</title>
 </head>
 <body>
-    <header></header>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">→ Home</a>
+            <a class="cabecalho__menu__link" href="">→ Sobre mim</a>
+        </nav>
+    </header>
 
     <main class="apresentacao">
 
@@ -26,17 +30,30 @@
             </p>
             
             <div class="apresentacao__conteudo__links">
-                <a class="apresentacao__conteudo__links__link" href="https://www.instagram.com/gui.crp/"><strong>Instagram</strong></a>
-                <a class="apresentacao__conteudo__links__link" href="https://github.com/gui-p"><strong>Github</strong></a>
+                <h2 class="apresentacao__conteudo__links__subtitulo">Acesse minhas redes:</h2>
+                <a class="apresentacao__conteudo__links__link" href="https://www.instagram.com/gui.crp/">
+                    <img src="./assets/instagram.png">
+                    Instagram
+                </a>
+                <a class="apresentacao__conteudo__links__link" href="https://github.com/gui-p">
+                    <img src="./assets/github.png">
+                    Github
+                </a>
+                <a class="apresentacao__conteudo__links__link" href="https://www.linkedin.com/in/guilherme-cruz-20809324a/">
+                    <img src="./assets/linkedin.png">
+                    Linkedin
+                </a>
             </div>
             
         </section>
 
         <!--Sessão de imagem-->
-        <img class="imagem-codigo" src="code.jpg" alt="Pessoa desenvolvedora">
+        <img class="imagem-codigo" src="./assets/code.jpg" alt="Pessoa desenvolvedora">
 
     </main>
 
-    <footer></footer>
+    <footer class="rodape">
+        <p>Desenvolvido por Guilherme Cruz de Paula</p>
+    </footer>
 </body>
 </html>

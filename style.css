@@ -7,19 +7,39 @@
 }
 
 body {
-    background-color: #2E4F4F;
-    color: #d0e2d3;
-    height: 100vh;
+    background-color: black;
+    color: #F6F6F6;
     box-sizing: border-box;
+}
+
+.cabecalho {
+    padding: 0% 15%;
+    padding-top: 2%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5%;
+}
+
+.cabecalho__menu__link {
+    text-decoration: none;
+    color: #22D4FD;
+    font-family: 'jetBrains Mono', monospace;
+    font-weight: 800;
+    font-size: 18px;
+
 }
 
 .apresentacao{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items:flex-start;
     justify-content: space-between;
     column-gap: 20vh;
-    margin: 10% 10%;
+    padding: 8% 15%;
 }
 
 .apresentacao__conteudo{
@@ -32,50 +52,91 @@ body {
 
 .apresentacao__conteudo__titulo {
     font-family: 'jetBrains Mono', monospace;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .apresentacao__conteudo__texto {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .apresentacao__conteudo__links {
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    row-gap: 32px;
 
+}
+
+.apresentacao__conteudo__links__subtitulo {
+    font-family: 'jetBrains Mono', monospace;
+    font-size: 20px;
 }
 
 .apresentacao__conteudo__links__link {
     text-decoration: none;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
-    color: black;
+    color: #F6F6F6;
 
-
-    background-color: #C2D076;
-    width: 280px;
-    padding: 21.5px 0px;
-    border-radius: 16px;
+    width: 378px;
+    padding: 16px 0px;
+    border: 2px solid #22D4FD;
+    border-radius: 8px;
     text-align: center;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 16px;
+
+    transition: 0.3s;
 }
 
+.apresentacao__conteudo__links__link:hover {
+    background-color: #181818;
+    width: 400px;
+}
+
+
 .destaque-titulo {
-    color: #F6511D;
+    color: #22D4FD;
 }
 
 .destaque-paragrafo {
-    color:  #C2D076;
+    color:  #22D4FD;
 }
 
+.destaque-paragrafo:hover   {
+    color: #5ae1ff;
+}
 
 .imagem-codigo{
     width: 50%;
     height: 50%;
     border-radius: 30px;
+    transition: 0.3s;
+}
+
+.imagem-codigo:hover{
+    border-radius: 60px;
+    
+}
+
+.rodape{
+    color: black;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px;
+    font-weight: 600;
+
+    background-color: #22D4FD;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    display: flex;
+    justify-content: center;
 }
